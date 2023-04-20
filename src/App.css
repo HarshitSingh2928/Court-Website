@@ -12,9 +12,48 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* Custom styles for the container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+
+/* Custom styles for the list group items */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: #f9f9f9;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.2rem 2rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #f2f2f2;
+}
+
+/* Custom styles for the arrow buttons */
+.btn-outline-secondary {
+  border-color: #777;
+  color: #777;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-outline-secondary:hover {
+  color: #333;
+  transform: translateX(5px);
+}
+
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34 */
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,12 +61,146 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
+}
+.header{
+  margin-bottom: 50px;
 }
 
 .App-link {
   color: #61dafb;
 }
+ body {
+  background: #070707;
+  height: 100%; 
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.welcomeBackground {
+  position: relative;
+    height:700px;
+    width:1000px;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.welcomeBackground:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:1;
+  display:block;
+  height:700px;
+  width:1000px;
+  opacity: 0.9; 
+  background:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80') ;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: cover;
+  -webkit-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -o-transition:all 1s ease;
+  transition:all 1s ease;
+}
+.welcomeBackground:hover:before{
+  background-position: -50px;
+  opacity: 1  .7;
+}
+.welcomeBackground div{
+  position: relative;
+  z-index:5;
+  color: #fff;
+  font-weight: lighter;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  width: 60%;
+}
+.welcomeBackground h1{
+  font-weight: lighter;
+}
 
+.welcomeBackground p {
+  color: #dadad7;
+}
+.getStartedBtn {
+  border: 2px solid #fff;
+  outline: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+    border-radius: 4px;
+    min-width: 170px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.login-container {
+  background-color: #f0f2f5;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.login-input {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.login-button {
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+.login-button:hover {
+  background-color: #007bff;
+  border-color: #0070cc;
+}
+
+.aboutHeadline{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding-left: 200px;
+ padding-right: 200px;
+}
+.aboutHeadline img{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+.aboutTitle{
+  display: flex;
+  align-items: left;
+  padding-left: 200px;
+  padding-right: 400px;
+}
+.image-grid{
+  justify-content: center;
+}
+.card-div{
+  display: flex;
+  width: 100%;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.card-image{
+  border: black solid transparent;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
